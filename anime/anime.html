@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="US-ascii">
+        <title>chia-anime</title>
+        
+        <style>
+            body {
+                margin: 0;
+                font-size: 0.8em;
+                background:#1c2223;
+            }
+            .wrapper {
+                position: relative;
+                width: 800px;
+                /*backscreen control*/
+                margin: 0 auto;
+                /*clear arrangement*/
+                /*overflow: hidden;*/
+            }
+            .header {
+                height:60px;
+                width: 100%;
+                display:flex;
+                align-items:center;
+            }
+            .header .left {
+                flex-grow:1;
+                display:flex;
+                font-size:0.9em;
+            }
+            .header .right{
+                font-family:verdana;
+                font-size:10px;
+                display:flex;
+                color: white;
+                font-weight:bold;
+            }
+            
+            .header .right .items:nth-child(1) {
+                border-left: 1px solid black;
+            }
+            
+            .header .right .items{
+                padding:10px;
+                background: linear-gradient(180deg, #323636, transparent);
+                border-right:1px solid black;
+                cursor: pointer;
+            }
+            
+            .header .right .items:hover {
+                background:#0F1111;
+            }
+            
+            .header .right input{
+                margin:5px;
+                padding:10px;
+                border-radius: 50px;
+                border:2px solid lightblue;
+                width: 90px;
+                
+            }
+            .menu {
+                display:flex;
+                background:linear-gradient(180deg, #323636, transparent);
+            }
+            .menu .items:nth-child(1) {
+                border-left:1px solid black;
+            }
+            .menu .items{
+                font-family:verdana;
+                font-weight:bold;
+                font-size:10px;
+                padding:20px;
+                color:white;
+                border-right:1px solid black;
+                cursor: pointer;
+                /*세로는 안줄이는 방법*/
+            }
+            .menu .items:hover {
+                background:#0F1111;
+                
+            }
+
+            .hot{
+                display:flex;
+                position:relative;
+            }
+            .hot div{
+                color:white;
+                padding:5px;
+            }
+            .hot a{
+                padding:5px;
+                color:skyblue;
+                position:relative;
+                cursor:pointer;
+            }
+            .hot a:hover {
+                background:#1c2223;
+            }
+            .description{
+                display:flex;
+            }
+            .description .right{
+                font-family:verdana;
+                font-size:11px;
+                border: 2px solid #323636;
+                flex-basis: 400px;
+                height:10px;
+                background-color:#0F1111;
+                color:white;
+                font-weight:bold;
+                padding:0px 10px 50px 0px;
+                margin:10px;
+            }
+            .description .left{
+                flex-basis: 400px;
+                display:flex;
+                justify-content: flex-end;
+                align-items: flex-start;
+                margin:10px;
+            }
+            .description .left .popular{
+                margin:0px 2px;
+                padding:0px 8px;
+                justify-content:flex-end;
+                color:gray;
+                background:darkred;
+            }
+            .ABC {
+                display:flex;
+                justify-content: center;
+            }
+            .ABC a {
+                margin:10px 1px;
+                padding:1px 8px;
+                font-size:10px;
+                background:#323636;
+                border-radius:20px;
+                color:white;
+            }
+            
+            .latest {
+                display:flex;
+            }
+            .latest .left{
+                margin:20px 0px;
+                color:white;
+                font-size:20px;
+                font-weight:bold;
+                font-family:verdana;
+            }
+            .latest .right{
+                margin:55px;
+                color:white;
+                padding:1px 15px;
+                position:absolute;
+                right:0;
+                background:#0F1111;
+            }
+            .latest .right:hover{
+                background:black;
+            }
+            .anime {
+                margin:30px 0px;
+                display:flex;
+            }
+            .anime .row {
+                display:flex;
+                color:white;
+            }
+            
+            .wrapper .leftBanner
+            {
+                position: absolute;
+                top: 0;
+                left: -220px;
+                width: 200px;
+            }
+            
+            .wrapper .leftBanner img {
+                width: 100%;
+            }
+            
+            .wrapper .rightBanner img{
+                width:100%;
+            }
+            
+            .wrapper .rightBanner
+            {
+                position: absolute;
+                top: 0;
+                right: -120px;
+                background: orange;
+                width: 100px;
+                height: 500px;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            
+            <div class="leftBanner">
+                <img src="http://cdn3.cpmstar.com/cached/creatives/1052995/MG_V4_336x768_Left.jpg">
+            </div>
+            <div class="rightBanner">
+                rightright
+            </div>
+            
+            
+            <div class="header">
+                <div class="left">
+                    <img src="http://cdn.chia-anime.tv/images/logos-1-2.png">
+                </div>
+                <div class="right">
+                    <div class="items">Home</div>
+                    <div class="items">MOST POPULAR</div>
+                    <div class="items">MOST RECENT</div>
+                    <div class="items">RANDOM EPISODES</div>
+                    <div class="items">ANIME LIST</div>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>  
+            <div class="menu">
+                <div class="items">ANIME INDEX (SUB)</div>
+                <div class="items">MANGA LIST</div>
+                <div class="items">ANIME MOVIES</div>
+                <div class="items">ANIME SOUNDTRACKS</div>
+                <div class="items">ASIAN DRAMA</div>
+                <div class="items">ANIME MOBILE (SUB)</div>
+            </div>
+            <div class="advertisement">
+                <img src="http://cdn3.cpmstar.com/cached/creatives/1010738/72890-3.gif">
+            </div>
+            <div class="hot">
+                <div class="session"> Hot Animes This Session: </div>
+                <a>Drifters,</a>
+                <a>Haikyuu3,</a>
+                <a>Bungou Stray Dogs 2,</a>
+                <a>3-gatsu no Lion,</a>
+                <a>Occultic;Nine,</a>
+                <a>Yuri on Ice,</a>
+                <a>Narutoget,</a>
+                <a>WatchOP</a>
+            </div>
+            <div class="description">
+                <div class="right">Watch Anime and Enjoy Fast Updates, High Quality, and a Great Environment! We have thousands of Anime for Online streaming. If this is your first visit, be sure to bookmark us.</div>
+                <div class="left">
+                    <div class="popular">BORUTO EPISODE 7!!</div>
+                    <div class="popular">FAIRY TAIL(2014)</div>
+                    <div class="popular">OP 789!!</div>
+                </div>
+            </div>
+            <div class="ABC">
+                <a> # </a>
+                <a> A </a>
+                <a> B </a>
+                <a> C </a>
+                <a> D </a>
+                <a> E </a>
+                <a> F </a>
+                <a> G </a>
+                <a> H </a>
+                <a> I </a>
+                <a> J </a>
+                <a> K </a>
+                <a> L </a>
+                <a> M </a>
+                <a> N </a>
+                <a> O </a>
+                <a> P </a>
+                <a> Q </a>
+                <a> R </a>
+                <a> S </a>
+                <a> T </a>
+                <a> U </a>
+                <a> V </a>
+                <a> W </a>
+                <a> X </a>
+                <a> Y </a>
+                <a> Z </a>
+            </div>
+            <div class="latest">
+                <div class="left">Latest anime Episodes</div>
+                <div class="right">Show 100 Latest Episodes</div>
+            </div>
+            <div class="anime">
+                <div class="row">
+                    <div class="box">
+                        <a class="items">Osomatsusan</a>
+                        <img src="http://s9000.animepremium.tv/thumb/thumbs/pfumtkh3qsus/1.jpg">    
+                    </div>
+                    <div class="box">
+                        <a class="items">Basilisk Ouka Ninpouchou</a>
+                        <img src="http://imgcf.chia-anime.tv/thumb/thumbs/aildip8sv109/6.jpg">
+                    </div>
+                    <div class="box">
+                        <a class="items">Karakai Jouzu no Takagisan</a>
+                        <img src="http://imgcf.chia-anime.tv/thumb/thumbs/pyo81vrtcj5o/17.jpg">
+                    </div>
+                    <div class="box">
+                        <a class="items">Puzzle & Dragons Cross</a>
+                        <img src="http://imgcf.chia-anime.tv/thumb/thumbs/ghsl2wqjlqlc/45.jpg">
+                    </div>
+                    <div class="box">
+                        <a class="items">Micchiri Neko</a>
+                        <img src="http://imgcf.chia-anime.tv/thumb/thumbs/htcd1f5kkwu4/5.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    
+</html>
