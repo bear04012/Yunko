@@ -1,0 +1,13 @@
+body {
+    margin:0;
+    overflow:hidden;
+}
+
+.ball {
+    left:0px;
+    background:orange;
+    border-radius:50%;
+    position:absolute;
+    top:0px;
+
+}
