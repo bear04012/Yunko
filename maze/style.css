@@ -1,0 +1,138 @@
+body {
+    background:gray;
+}
+
+.button {
+    top:100px;
+    left:100px;
+}
+
+#ball {
+    width:30px;
+    height:30px;
+    background:red;
+    border-radius:50%;
+    position:absolute;
+    left:10px;
+    top:85px;
+}
+
+.wall .up{
+    margin:20px 0px;
+    width:600px;
+    height:20px;
+    background:white;
+}
+
+.wall .bottom {
+    margin:560px 0px;
+    width:600px;
+    height:20px;
+    background:white;
+}
+
+.wall .left{
+    position:absolute;
+    top:130px;
+    width:20px;
+    height:520px;
+    background:white;
+}
+
+.wall .right{
+    position:absolute;
+    top:53px;
+    width:20px;
+    height:520px;
+    left:590px;
+    background:white;
+}
+
+.vertical .w1 {
+    position:absolute;
+    top:53px;
+    width:20px;
+    height:500px;
+    left:150px;
+    background:white;
+} 
+
+.vertical .w2 {
+    position:absolute;
+    top:150px;
+    width:20px;
+    height:500px;
+    left:300px;
+    background:white;
+} 
+
+.vertical .w3 {
+    position:absolute;
+    top:150px;
+    width:20px;
+    height:125px;
+    left:450px;
+    background:white;
+} 
+
+.vertical .w4 {
+    position:absolute;
+    top:350px;
+    width:20px;
+    height:300px;
+    left:450px;
+    background:white;
+} 
+
+.horizontal .w1 {
+    position:absolute;
+    top:250px;
+    height:20px;
+    width:75px;
+    background:white;
+}
+
+.horizontal .w2 {
+    position:absolute;
+    top:533px;
+    left:95px;
+    height:20px;
+    width:75px;
+    background:white;
+}
+
+.horizontal .w3 {
+    position:absolute;
+    top:380px;
+    left:150px;
+    height:20px;
+    width:75px;
+    background:white;
+}
+
+.horizontal .w4 {
+    position:absolute;
+    top:150px;
+    left:300px;
+    height:20px;
+    width:150px;
+    background:white;
+}
+
+.horizontal .w5 {
+    position:absolute;
+    top:450px;
+    left:450px;
+    height:20px;
+    width:75px;
+    background:white;
+}
+
+.horizontal .w6 {
+    position:absolute;
+    top:553px;
+    left:533px;
+    height:20px;
+    width:75px;
+    background:white;
+}
