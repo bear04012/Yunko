@@ -1,0 +1,10 @@
+.buttons{
+    position:absolute;
+    top:550px;
+}
+
+.buttons .up{
+    position:absolute;
+    left:45px;
+    top: -25px;
+}
