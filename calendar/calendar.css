@@ -1,0 +1,47 @@
+body {
+    margin : 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#month {
+    position:absolute;
+    left:40vh;
+    font-size:1.3em;
+    
+}
+
+.buttons {
+    padding:20px 0px;
+}
+
+#day .day {
+    color:#FF9300;
+    width: calc(100% / 7);
+    height: 30px;
+    display: inline-block;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    background:#F4F4F4;
+    box-sizing: border-box;
+    
+}
+#calendar {
+    display: grid;
+    grid-auto-rows:70px;
+    grid-template-columns: repeat(7, 1fr);
+    background:beige;
+}
+
+#calendar > .date {
+    background:silver;
+    margin:1px;
+    
+}
+
+#calendar > .today {
+    background:skyblue;
+    
+}
