@@ -1,0 +1,29 @@
+.gameDiv {
+    display:inline-grid;
+    grid-auto-rows:50px;
+    grid-gap:3px;
+    background:skyblue;
+    border:3px solid skyblue;
+
+}
+
+.cell {
+    height:50px;
+    width:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:white;
+    font-size:3em;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.cell:hover {
+    background:lime;
+    opacity:0.7;
+}
+
+.selected {
+    background:red !important;
+}
